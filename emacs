@@ -16,7 +16,8 @@
    delete-old-versions t
    kept-new-versions 6
    kept-old-versions 2
-   version-control t)       ; use versioned backups
+   version-control t       ; use versioned backups
+   auto-save-list-file-prefix "~/.emacs.auto-save-list/.saves-")
 
 ;;
 ;;

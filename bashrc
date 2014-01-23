@@ -18,6 +18,7 @@ declare -x LESS="deMX"
 declare -x HISTORYFILESIZE=10000
 declare -x HISTSIZE=10000
 declare -x PATH=$PATH:.
+declare -x PROMPT_DIRTRIM=2
 
 
 #

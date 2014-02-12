@@ -9,6 +9,7 @@
 # SHELL OPTIONS - SHOPT
 shopt -s autocd
 shopt -s histappend
+shopt -s cdspell
 
 declare -x PS1='\u@\h \W \$ '
 #
@@ -56,4 +57,5 @@ match_lhs=""
         && match_lhs=$(dircolors --print-database)
 [[ $'\n'${match_lhs} == *$'\n'"TERM "${safe_term}* ]] && use_color=true
 
-
+# Disable Ctrl-S for flow control
+stty -ixon
